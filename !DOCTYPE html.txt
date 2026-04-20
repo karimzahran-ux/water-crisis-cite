@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>WaterCare - Water Crisis</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #cfe9f3, #a6d4e6);
+  color: #1b2a41;
+}
+
+/* HEADER */
+header {
+  padding: 20px 40px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+header span {
+  color: #0077b6;
+}
+
+/* MAIN LAYOUT */
+.container {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  align-items: center;
+}
+
+/* TEXT BOX */
+.text-box {
+  flex: 1;
+  background: rgba(255,255,255,0.6);
+  padding: 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #0077b6;
+}
+
+/* IMAGE */
+.image-box {
+  flex: 1;
+  position: relative;
+}
+
+.image-box img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+}
+
+/* WATER DROP BUTTON */
+.water-btn {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(145deg, #4cc9f0, #0077b6);
+  color: white;
+  border: none;
+  padding: 15px 35px;
+  font-size: 18px;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+/* Water drop shape */
+.water-btn::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background: #4cc9f0;
+  border-radius: 50% 50% 0 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.water-btn:hover {
+  transform: translateX(-50%) scale(1.1);
+  background: linear-gradient(145deg, #48bfe3, #023e8a);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+💧 Water<span>Care</span>
+</header>
+
+<div class="container">
+
+<div class="text-box">
+<h1>Water Crisis</h1>
+
+<p>
+The world is facing a rapidly intensifying <span class="highlight">water crisis</span> that threatens not only environmental stability but also human health, food production, and global economies. While water covers more than 70% of the Earth's surface, only a very small percentage is freshwater, and even less is accessible for safe human use.
+</p>
+
+<p>
+As populations grow and climate patterns shift, the demand for clean water continues to rise. At the same time, pollution from industries, agriculture, and everyday human activity is contaminating rivers, lakes, and underground water sources. This creates a dangerous imbalance between supply and demand, leaving millions of people without reliable access to clean drinking water.
+</p>
+
+<p>
+Climate change is one of the biggest contributors to this issue. Increasing temperatures lead to more frequent droughts, reduced rainfall in many regions, and shrinking glaciers that once provided steady water supplies. In other areas, extreme weather events like floods can damage infrastructure and contaminate clean water systems, making the problem even worse.
+</p>
+
+<p>
+The consequences of the water crisis are severe. Lack of clean water leads to the spread of disease, limits agricultural production, and forces communities to spend hours each day collecting water instead of focusing on education or economic development. In many parts of the world, access to water is becoming a daily struggle for survival.
+</p>
+
+<p>
+However, there is still hope. By raising awareness and taking action—such as conserving water, reducing pollution, supporting sustainable technologies, and improving water management systems—we can begin to address this crisis. Every small effort contributes to a larger solution that can protect this vital resource for future generations.
+</p>
+
+</div>
+
+<div class="image-box">
+<img src="https://images.unsplash.com/photo-1593433576333-1b47c3f2b7c1" alt="Water Crisis Image">
+
+<button class="water-btn" onclick="redirect()">
+Learn More 💧
+</button>
+</div>
+
+</div>
+
+<script>
+function redirect() {
+  window.location.href = "https://water.org/our-impact/water-crisis/";
+}
+</script>
+
+</body>
+</html>
